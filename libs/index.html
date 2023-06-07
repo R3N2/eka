@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML & CSS практика от AVIS TV</title>
+
+	<!-- Bootstrap reboot (для сброса стилей) -->
+	<link rel="stylesheet" href="libs/bootstrap-reboot.min.css">
+
+	<!-- Bootstrap сетка -->
+	<link rel="stylesheet" href="libs/bootstrap-grid.min.css">
+
+	<!-- Шрифты с Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b8991598b2.js"></script>
+	<!-- Стили сайта -->
+	<link rel="stylesheet" href="css/styles.css">
+    <style>
+        hr{
+            border: none;
+            background-color: black;
+            color: black;
+            height: 2px;
+            
+        }
+         .line {
+    border-bottom: 4px solid #f00; /* Параметры линии */
+    align-items: center;
+   }
+    </style>
+    
+</head>
+<body bgcolor="#FAEBD7">
+  <header class="aligncenter">
+    <p><img src="Торговый-знак-с-названием.png" width="120" height="180" align="middle" /> 
+      Очень симпатичная пчёлка</p>
+        <hr>
+       <div class="search-box">
+    <input class="search-txt" type="text"  name="" placeholder="Поиск...">
+           <a class="search-btn" href="#">
+           <i class="fa fa-search" aria-hidden="true"></i></a>
+    
+    </div>
+    <hr>
+  <nav>
+  
+  <ul class="menu">
+      <li><a href="ocnovnue cvedenue.html"target="_self">Основные сведения</a></li>
+    <li><a href="#">Образование</a></li>
+      <li><a href="Stryktyru.html"target="_self">Структура и органы управления</a></li>
+      <li><a href="#">Документы</a></li>
+    <li><a href="#">Руководство</a></li>
+      <li><a href="#">Материально-техническое обеспечение и оснащенность образовательного процесса</a></li>
+    <li><a href="#">Доступная среда</a></li>
+      <li><a href="#">Вакантные места для приема</a></li>
+  </ul>
+</nav>
+    
+<div id="text">
+    <img src="img.jpg" style="float: left">
+    
+    <div id="Ocnovnue" class="text2"></div>
+       <section>
+           <center><h1 >Основные сведения</h1></center>
+           <center> <p> ООО  «СЛАВЯНСК ЭКО»<br> </center> 
+           
+Дата создания	14.07.2011
+Учредитель	Паранянц Роберт Васильевич
+Паранянц Валерий Васильевич   <br>
+Место нахождения образовательной организации	Россия, Краснодарский край, Славянский район, г. Славянск-на-Кубани, ул. Колхозная, дом №2 <br>
+Режим работы	Понедельник-Пятница: 08:00-17:00
+
+График работы	5/2
+           </p>
+        
+        
+          
+          </section>
+    <section>
+        
+
+        <center> <h1 id="Ctryktypa">"Структура и органы управления образовательной организацией"</h1> </center>
+        <center><p>Генеральный Директор</p></center>
+
+            <center><p>Испольнительный Директор</p></center>
+
+            <center><p>Директор службы  ОТ, экологии и ПБ</p></center>
+
+            <center><p>Начальник Учебного центра</p></center>
+
+        <center><p>Специалист по обучению</p></center>
+    
+    </section>
+    </div>
+    
+  <footer class="footer">
+      <div class="container">
+      <nav class="footer__menu">
+          <ul class="footer__menu-list" >
+           <li class="footer__menu-link">
+              <a class="footer__menu-link" href="#">Контакты:</a>
+              </li>
+          </ul>
+          
+          <ul class="footer__menu-list">
+          <li class="footer__menu-link">
+              <a class="footer__menu-link" href="http://slaveco.ru/" target="_blank">Основной сайт</a>
+              </li>
+          </ul>
+          </nav>
+       
+      </div>
+    
+    </footer>
+
+    
+    <script>
+      import { useEffect } from "react";
+  import { useLocation } from "react-router-dom";
+  
+  export default function ScrollToTop() {
+    const { pathname } = useLocation();
+  
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+  
+    return null;
+  }
+  </script>
+            
+    
+    
+</body>
+</html>
